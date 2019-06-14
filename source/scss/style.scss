@@ -49,7 +49,6 @@ body {
   max-width: 369px;
   margin: 10px auto;
 }
-
 .form__input:hover,
 .form__input:focus,
 .form__input:active {
@@ -59,18 +58,18 @@ body {
 }
 .form__checkbox-wrapper {
   display: block;
-  
   letter-spacing: 1px;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
+  margin: 5px 30px 5px 45px;
 }
 .form__checkbox {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.checkbox {
+.form__checkbox-mod {
   position: absolute;
   height: 24px;
   padding-left: 52px;
@@ -79,7 +78,7 @@ body {
   background-repeat: no-repeat;
   transition: background-image 0.2s ease-in;
 }
-.form__checkbox:checked + .checkbox {
+.form__checkbox:checked + .form__checkbox-mod {
   background-image: url(../img/checkbox_icon_active.svg);
 }
 .form__group {
@@ -125,6 +124,21 @@ body {
   background-image: url(../img/Line.svg);
   background-repeat: no-repeat;
   background-position: 4px 20px;
+  margin: 5px 45px 5px 25px;
+}
+@media (max-width: 320px) {
+  .page {
+    background-position: 50%;
+  }
+  .form__group {
+    flex-flow: column;
+  }
+  .form__checkbox-wrapper {
+    margin: 5px 26px 5px 25px;
+  }
+  .form__link {
+    margin: 5px 26px 5px 56px;
+  }
 }
 
 .valid {

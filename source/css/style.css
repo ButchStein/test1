@@ -36,19 +36,6 @@ body {
   background-image: url(../img/form_bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-shadow: 0 2px 32px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 32px rgba(0, 0, 0, 0.5);
   padding: 30px; }
@@ -57,11 +44,11 @@ body {
   display: block;
   width: 97px;
   height: 97px;
-  margin: 5px 0 22px; }
+  margin: 5px auto 22px; }
 
 .form__input {
   display: block;
-  width: 369px;
+  width: 100%;
   height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 25px;
@@ -75,7 +62,8 @@ body {
   padding: 14px 50px 12px; }
 
 .form__input-wrapper {
-  margin: 5px 0; }
+  max-width: 369px;
+  margin: 10px auto; }
 
 .form__input:hover,
 .form__input:focus,
@@ -86,7 +74,6 @@ body {
 
 .form__checkbox-wrapper {
   display: block;
-  padding-left: -52px;
   letter-spacing: 1px;
   color: #ffffff;
   font-size: 16px;
@@ -111,7 +98,6 @@ body {
   background-image: url(../img/checkbox_icon_active.svg); }
 
 .form__group {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,13 +105,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 75px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 10px 30px 5px; }
 
 .form__button_submit {
+  display: block;
   width: 151px;
   height: 48px;
   border-radius: 25px;
@@ -136,7 +121,8 @@ body {
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 2.53px;
-  opacity: 0.2; }
+  opacity: 0.2;
+  margin: 15px auto; }
 
 .form__nav-link {
   width: 100%;

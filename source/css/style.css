@@ -229,7 +229,6 @@ body {
   height: 48px;
   border-radius: 25px;
   border: 1px solid #ffffff;
-  cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
@@ -279,6 +278,12 @@ body {
   background-repeat: no-repeat;
   background-position: 325px 7px;
   color: #b40000; }
+
+.active {
+  opacity: 1;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer; }
 
 @media (max-width: 320px) {
   .page {

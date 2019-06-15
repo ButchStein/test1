@@ -85,16 +85,8 @@ var passwordValidityChecks = [
         invalidityMessage: 'Пароль не меньше 5 символов',
         element: document.getElementById('password')
     },
-    {
-        isInvalid: function (input) {
-            return input.value.length == '';
-        },
-        invalidityMessage: 'Поле не может быть пустым',
-        element: document.getElementById('password')
-    }
 
 ];
-
 
 
 
@@ -107,11 +99,6 @@ userphoneInput.CustomValidation.validityChecks = userphoneValidityChecks;
 passwordInput.CustomValidation = new CustomValidation(passwordInput);
 passwordInput.CustomValidation.validityChecks = passwordValidityChecks;
 
-/* ----------------------------
-
-	Event Listeners
-
----------------------------- */
 
 var inputs = document.querySelectorAll('input:not([type="submit"])');
 
@@ -119,14 +106,21 @@ var inputs = document.querySelectorAll('input:not([type="submit"])');
 var submit = document.querySelector('input[type="submit"');
 var form = document.getElementById('log_in');
 
+// if (CustomValidation) {
+//     submit.classList.remove('disabled');
+// } else {
+//     submit.classList.add('disabled');
+// }
+
 function validate() {
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].CustomValidation.checkInput();
-        console.log(inputs[i]);
+
     }
+
 }
 
-submit.addEventListener('click', validate);
+// submit.addEventListener('click', validate);
 form.addEventListener('submit', validate);
 
 

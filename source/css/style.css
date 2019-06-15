@@ -1,11 +1,117 @@
 body {
-  font-family: "Helvetica Neue"; }
+  font-family: "HelveticaNeueCyr"; }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fonts/HelveticaNeueCyr-Thin.otf");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot");
+  src: local("../fonts/HelveticaNeueCyr-Medium"), url("../fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Heavy.eot");
+  src: local("../fonts/HelveticaNeueCyr-Heavy"), url("../fonts/HelveticaNeueCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Heavy.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-HeavyItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-HeavyItalic"), url("../fonts/HelveticaNeueCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-HeavyItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Black.eot");
+  src: local("../fonts/HelveticaNeueCyr-Black"), url("../fonts/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-UltraLightItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-UltraLightItalic"), url("../fonts/HelveticaNeueCyr-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-UltraLightItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-BlackItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-BlackItalic"), url("../fonts/HelveticaNeueCyr-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-BlackItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-ThinItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-ThinItalic"), url("../fonts/HelveticaNeueCyr-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-ThinItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-MediumItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-MediumItalic"), url("../fonts/HelveticaNeueCyr-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-MediumItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-LightItalic.eot");
+  src: local("HelveticaNeueCyr-LightItalic"), url("../fonts/HelveticaNeueCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-LightItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-UltraLight.eot");
+  src: local("../fonts/HelveticaNeueCyr-UltraLight"), url("../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("../fonts/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-BoldItalic.eot");
+  src: local("../fonts/HelveticaNeueCyr-BoldItalic"), url("../fonts/HelveticaNeueCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-BoldItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Italic.eot");
+  src: local("../fonts/HelveticaNeueCyr-Italic"), url("../fonts/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+  src: local("../fonts/HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: local("../fonts/HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Light.eot");
+  src: local("../fonts/HelveticaNeueCyr-Light"), url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot");
+  src: local("../fonts/HelveticaNeueCyr-Thin"), url("../fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
 
 html,
 body {
@@ -59,7 +165,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
-  padding: 14px 50px 12px; }
+  padding: 14px 5px 12px; }
 
 .form__input-wrapper {
   max-width: 369px;
@@ -78,17 +184,22 @@ body {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-  margin: 5px 30px 5px 45px; }
+  margin: 5px auto;
+  line-height: 1.5em;
+  padding-left: 52px; }
 
 .form__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none; }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
 
 .form__checkbox-mod {
   position: absolute;
+  width: 44px;
   height: 24px;
-  padding-left: 52px;
+  margin-left: -52px;
   line-height: 1.5em;
   background-image: url(../img/checkbox_icon.svg);
   background-repeat: no-repeat;
@@ -99,16 +210,18 @@ body {
   background-image: url(../img/checkbox_icon_active.svg); }
 
 .form__group {
+  max-width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 10px 30px 5px; }
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px auto 5px; }
 
 .form__button_submit {
   display: block;
@@ -117,10 +230,9 @@ body {
   border-radius: 25px;
   border: 1px solid #ffffff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 600;
   letter-spacing: 2.53px;
   opacity: 0.2;
   margin: 15px auto; }
@@ -139,28 +251,16 @@ body {
 
 .form__link {
   display: block;
+  width: 107px;
   height: 24px;
   line-height: 1.5em;
-  letter-spacing: 1px;
   color: white;
   font-size: 16px;
+  text-align: center;
   background-image: url(../img/Line.svg);
   background-repeat: no-repeat;
-  background-position: 4px 20px;
-  margin: 5px 45px 5px 25px; }
-
-@media (max-width: 320px) {
-  .page {
-    background-position: 50%; }
-  .form__group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-  .form__checkbox-wrapper {
-    margin: 5px 26px 5px 25px; }
-  .form__link {
-    margin: 5px 26px 5px 56px; } }
+  background-position: 2px 20px;
+  margin: 5px auto; }
 
 .valid {
   display: block;
@@ -175,9 +275,25 @@ body {
   display: block;
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  background-image: url(../img/error_icon.svg);
+  background-image: url(../img/er.jpg);
   background-repeat: no-repeat;
   background-position: 325px 7px;
-  color: #ff0000; }
+  color: #b40000; }
+
+@media (max-width: 320px) {
+  .page {
+    background-position: 50%; }
+  .form__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .invalid {
+    background-position: 220px 7px; }
+  .valid {
+    background-position: 221px 15px; } }
 
 /*# sourceMappingURL=style.css.map */

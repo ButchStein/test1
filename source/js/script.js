@@ -69,7 +69,7 @@ var userphoneValidityChecks = [
 
     {
         isInvalid: function (input) {
-            var illegalCharacters = input.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,21}$/);
+            var illegalCharacters = input.value.match(/^((8|\+7)[\- ]?)?(\(? \d{3} \)?[\- ]?)?[\d\- ]{10,23}$/);
             return illegalCharacters ? false : true;
         },
         invalidityMessage: 'Введите корректный номер',
@@ -80,39 +80,19 @@ var userphoneValidityChecks = [
 var passwordValidityChecks = [
     {
         isInvalid: function (input) {
-            return input.value.length < 8 | input.value.length > 100;
+            return input.value.length < 5;
         },
-        invalidityMessage: 'This input needs to be between 8 and 100 characters',
-        element: document.querySelector('label[for="password"] .input-requirements li:nth-child(1)')
+        invalidityMessage: 'Пароль не меньше 5 символов',
+        element: document.getElementById('password')
     },
     {
         isInvalid: function (input) {
-            return !input.value.match(/[0-9]/g);
+            return input.value.length == '';
         },
-        invalidityMessage: 'At least 1 number is required',
-        element: document.querySelector('label[for="password"] .input-requirements li:nth-child(2)')
-    },
-    {
-        isInvalid: function (input) {
-            return !input.value.match(/[a-z]/g);
-        },
-        invalidityMessage: 'At least 1 lowercase letter is required',
-        element: document.querySelector('label[for="password"] .input-requirements li:nth-child(3)')
-    },
-    {
-        isInvalid: function (input) {
-            return !input.value.match(/[A-Z]/g);
-        },
-        invalidityMessage: 'At least 1 uppercase letter is required',
-        element: document.querySelector('label[for="password"] .input-requirements li:nth-child(4)')
-    },
-    {
-        isInvalid: function (input) {
-            return !input.value.match(/[\!\@\#\$\%\^\&\*]/g);
-        },
-        invalidityMessage: 'You need one of the required special characters',
-        element: document.querySelector('label[for="password"] .input-requirements li:nth-child(5)')
+        invalidityMessage: 'Поле не может быть пустым',
+        element: document.getElementById('password')
     }
+
 ];
 
 
@@ -178,7 +158,7 @@ form.addEventListener('click', function () {
 
     function mask(event) {
 
-        var matrix = "8 (___) ___-__-__",
+        var matrix = "8 ( ___ ) ___-__-__",
 
             i = 0,
 

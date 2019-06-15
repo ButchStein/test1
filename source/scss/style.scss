@@ -43,7 +43,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
-  padding: 14px 50px 12px;
+  padding: 14px 5px 12px;
 }
 .form__input-wrapper {
   max-width: 369px;
@@ -58,21 +58,28 @@ body {
 }
 .form__checkbox-wrapper {
   display: block;
+  // width: 21.5654%;
   letter-spacing: 1px;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-  margin: 5px 30px 5px 45px;
+  margin: 5px auto;
+  line-height: 1.5em;
+  padding-left: 52px;
 }
 .form__checkbox {
-  -webkit-appearance: none;
-  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .form__checkbox-mod {
   position: absolute;
+  width: 44px;
   height: 24px;
-  padding-left: 52px;
+  margin-left: -52px;
   line-height: 1.5em;
   background-image: url(../img/checkbox_icon.svg);
   background-repeat: no-repeat;
@@ -82,10 +89,11 @@ body {
   background-image: url(../img/checkbox_icon_active.svg);
 }
 .form__group {
+  max-width: 390px;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  margin: 10px 30px 5px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px auto 5px;
 }
 .form__button_submit {
   display: block;
@@ -94,10 +102,9 @@ body {
   border-radius: 25px;
   border: 1px solid #ffffff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 600;
   letter-spacing: 2.53px;
   opacity: 0.2;
   margin: 15px auto;
@@ -116,30 +123,18 @@ body {
 }
 .form__link {
   display: block;
+  width: 107px;
   height: 24px;
   line-height: 1.5em;
-  letter-spacing: 1px;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  text-align: center;
   background-image: url(../img/Line.svg);
   background-repeat: no-repeat;
-  background-position: 4px 20px;
-  margin: 5px 45px 5px 25px;
+  background-position: 2px 20px;
+  margin: 5px auto;
 }
-@media (max-width: 320px) {
-  .page {
-    background-position: 50%;
-  }
-  .form__group {
-    flex-flow: column;
-  }
-  .form__checkbox-wrapper {
-    margin: 5px 26px 5px 25px;
-  }
-  .form__link {
-    margin: 5px 26px 5px 56px;
-  }
-}
+
 
 .valid {
   display: block;
@@ -154,8 +149,23 @@ body {
   display: block;
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  background-image: url(../img/error_icon.svg);
+  background-image: url(../img/er.jpg);
   background-repeat: no-repeat;
   background-position: 325px 7px;
-  color: #ff0000;
+  color: #b40000;
+}
+@media (max-width: 320px) {
+  .page {
+    background-position: 50%;
+  }
+  .form__group {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .invalid {
+    background-position: 220px 7px;
+  }
+  .valid{
+    background-position: 221px 15px;
+  }
 }

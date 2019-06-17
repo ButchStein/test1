@@ -8,6 +8,7 @@ body {
   background-image: url(../img/bg_image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -58,7 +59,6 @@ body {
 }
 .form__checkbox-wrapper {
   display: block;
-  // width: 21.5654%;
   letter-spacing: 1px;
   color: #ffffff;
   font-size: 16px;
@@ -74,7 +74,6 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-
 .form__checkbox-mod {
   position: absolute;
   width: 44px;
@@ -133,15 +132,13 @@ body {
   background-position: 2px 20px;
   margin: 5px auto;
 }
-
-
 .valid {
   display: block;
   border: 1px solid #ffffff;
   background-color: transparent;
   background-image: url(../img/check_ok.svg);
   background-repeat: no-repeat;
-  background-position: 325px 15px;
+  background-position: 95% 15px;
   color: #ffffff;
 }
 .invalid {
@@ -150,13 +147,13 @@ body {
   background-color: #ffffff;
   background-image: url(../img/er.jpg);
   background-repeat: no-repeat;
-  background-position: 325px 7px;
+  background-position: 95% 7px;
   color: #b40000;
 }
-.active{
+.active {
   opacity: 1;
   background-color: #ffffff;
-  color:#000000;
+  color: #000000;
   cursor: pointer;
 }
 @media (max-width: 320px) {
@@ -166,11 +163,5 @@ body {
   .form__group {
     flex-flow: column;
     justify-content: center;
-  }
-  .invalid {
-    background-position: 220px 7px;
-  }
-  .valid{
-    background-position: 221px 15px;
   }
 }

@@ -5,7 +5,7 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
+    "browser-sync": "2.27.x",
     "cssnano": "^4.1.10",
     "gulp": "4.0.x",
     "gulp-postcss": "8.0.x",
